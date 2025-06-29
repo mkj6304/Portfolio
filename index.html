@@ -175,8 +175,21 @@
         opacity: 0.8;
       }
     }
-    
-    
+
+    .link-hover {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #ff5cf4;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.glass-card:hover .link-hover {
+  opacity: 1;
+}
     
   </style>
 </head>
@@ -185,7 +198,7 @@
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Mayank Kumar Jha</a>
+      <a class="navbar-brand" href="index.html">Mayank Kumar Jha</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -199,9 +212,9 @@
           <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item d-flex align-items-center">
-            <a href="https://linkedin.com/in/mayank-jha-361573298" class="nav-link px-2"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/mkj6304" class="nav-link px-2"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/yourprofile" class="nav-link px-2"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://linkedin.com/in/mayank-jha-361573298" class="nav-link px-2"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/mkj6304" class="nav-link px-2"><i class="fab fa-github"></i></a>
+            <!--<a href="https://twitter.com/yourprofile" class="nav-link px-2"><i class="fab fa-twitter"></i></a>-->
           </li>
           
         </ul>
@@ -219,7 +232,7 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
+  <!--<section id="projects" class="section">
     <h2 class="section-title">Projects</h2>
     <div class="row g-4">
       <div class="col-md-6 col-lg-4" data-aos="fade-up">
@@ -241,7 +254,7 @@
       </div>
       <div class="col-md-6 col-lg-4" data-aos="fade-up">
         <div class="glass-card">PGLife
-          <p>• Developed web app for PG/hostel search integrated with live data scraping.</p>
+          <p>Developed web app for PG/hostel search integrated with live data scraping.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4" data-aos="fade-up">
@@ -250,7 +263,51 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
+
+  <div class="section">
+  <h2 class="section-title">Projects</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+    
+    <a href="https://github.com/mkj6304/GlideMate" target="_blank" class="glass-card" style="position: relative; text-decoration: none; color: inherit;">
+      <h3>GlideMate</h3>
+      <p>A Smart WheelChair with Gesture and Voice Controls designed for the differently abled.</p>
+      <span class="link-hover">🔗 github.com/github.com/GlideMate</span>
+    </a>
+
+    <a href="https://github.com/mkj6304/HospiSync" target="_blank" class="glass-card" style="position: relative; text-decoration: none; color: inherit;">
+      <h3>HospiSync</h3>
+      <p>Designed hospital management AI model optimizing patient admission, OPD queuing, and medicine inventory.</p>
+      <span class="link-hover">🔗 github.com/mkj6304/HospiSync</span>
+    </a>
+
+    <a href="https://github.com/mkj6304/MediFlow" target="_blank" class="glass-card" style="position: relative; text-decoration: none; color: inherit;">
+      <h3>MediFlow</h3>
+      <p>Developed a medicine quality monitoring platform with IoT sensors and Blockchain for secure tracking.</p>
+      <span class="link-hover">🔗 github.com/mkj6304/MediFlow</span>
+    </a>
+
+    <a href="https://github.com/mkj6304/LinguaQuest" target="_blank" class="glass-card" style="position: relative; text-decoration: none; color: inherit;">
+      <h3>LinguaQuest</h3>
+      <p>Created multilingual PDF question–answer generation system improving academic accessibility.</p>
+      <span class="link-hover">🔗 github.com/mkj6304/LinguaQuest</span>
+    </a>
+
+    <a href="https://github.com/mkj6304/PGLife" target="_blank" class="glass-card" style="position: relative; text-decoration: none; color: inherit;">
+      <h3>PGLife</h3>
+      <p>Developed web app for PG/hostel search integrated with live data scraping.</p>
+      <span class="link-hover">🔗 github.com/mkj6304/PGLife</span>
+    </a>
+
+    <a href="https://github.com/mkj6304/StudySync" target="_blank" class="glass-card" style="position: relative; text-decoration: none; color: inherit;">
+      <h3>StudySync</h3>
+      <p>Developed a student self-management application with integration with university application for complete monitoring and tracking.</p>
+      <span class="link-hover">🔗 github.com/mkj6304/StudySync</span>
+    </a>
+
+  </div>
+</div>
+
 
   <!-- Additional Sections -->
   <section id="education" class="section" data-aos="fade-up">
@@ -296,7 +353,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <p>© 2025 Mayank Kumar Jha. All rights reserved.</p>
   </footer>
 
   <!-- Scripts -->
